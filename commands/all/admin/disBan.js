@@ -47,7 +47,7 @@ module.exports = {
     // Crear un embed para mostrar la lista de baneados
     const banListEmbed = new EmbedBuilder()
       .setColor("#131010") // Color naranja para el embed
-      .setTitle("📜 Lista de usuarios baneados")
+      .setTitle(" Lista de usuarios baneados")
       .setDescription(banList)
       .setFooter({ text: "Selecciona un usuario para desbanear." });
 
@@ -76,7 +76,7 @@ module.exports = {
         // Crear un embed para la respuesta
         const unbanEmbed = new EmbedBuilder()
           .setColor("#00FF00") // Color verde para el embed
-          .setTitle("✅ Usuario desbaneado")
+          .setTitle("Usuario desbaneado")
           .setDescription(`**Usuario:** ${userToUnban.user.tag}`)
           .setFooter({ text: `Desbaneado por: ${interaction.user.tag}` });
 
