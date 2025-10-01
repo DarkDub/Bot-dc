@@ -26,14 +26,14 @@ module.exports = {
     try {
       const fetched = await interaction.channel.bulkDelete(cantidad, true);
       interaction.reply({
-        content: `🗑️ Se eliminaron **${fetched.size}** mensajes.`,
+        content: ` Se eliminaron **${fetched.size}** mensajes.`,
         flags: 64,
 
       });
     } catch (error) {
       console.error("Error al eliminar mensajes:", error);
       interaction.reply({
-        content: "❌ No pude eliminar los mensajes. Verifica mis permisos.",
+        content: "No pude eliminar los mensajes. Verifica mis permisos.",
         flags: 64,
       });
     }
