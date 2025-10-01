@@ -48,7 +48,7 @@ module.exports = {
       // Crear un embed para la respuesta
       const banEmbed = new EmbedBuilder()
         .setColor("#3D3D3D") // Color rojo para el embed
-        .setTitle("✅ Usuario baneado")
+        .setTitle(" Usuario baneado")
         .setThumbnail(user.displayAvatarURL())
         .setDescription(`**Usuario:** ${user.globalName}\n**Razón:** ${razón}`)
         .setFooter({ text: `Baneado por: ${interaction.user.globalName}` });
