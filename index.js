@@ -3,7 +3,7 @@ const { loadSlash } = require("./handlers/slashHandler.js");
 const { afkUsers, calcularTiempoAFK } = require("./commands/all/Generales/Afk.js");
 require("dotenv").config();
 const fs = require("fs");
-const config = require("./.env");
+const config = require("dontenv").config();
 
 const client = new Client({ intents: 53608447 });
 
