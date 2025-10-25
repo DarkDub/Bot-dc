@@ -9,6 +9,8 @@ dotenv.config(); // Cargar variables del .env
 
 // Crear cliente de Discord
 const client = new Client({ intents: 53608447 });
+// Cargar eventos
+require("./events/guildMemberAdd")(client);
 
 // Colecciones del bot
 client.prefixCommands = new Collection();
